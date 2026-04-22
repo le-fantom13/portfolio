@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daniel Junior Victor Laté | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">DV</span>
+      <span class="name">Daniel Laté</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#about" data-i18n="nav_about">À propos</a>
+      <a href="#skills" data-i18n="nav_skills">Compétences</a>
+      <a href="#projects" data-i18n="nav_projects">Projets</a>
+      <a href="#experience" data-i18n="nav_experience">Expériences</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn small" id="toggleTheme">🌙</button>
+
+      <select id="languageSelect" class="lang-select">
+        <option value="fr">FR</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Daniel Junior Victor Laté</h1>
+      <h2 data-i18n="hero_title">Étudiant en Ingénierie Informatique</h2>
+      <p data-i18n="hero_desc">
+        Passionné par l’analyse de données, l’intelligence artificielle et les technologies émergentes.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="assets/cvDani.pdf" target="_blank" data-i18n="btn_cv">Télécharger mon CV</a>
+        <a class="btn secondary" href="https:/www.linkedin.com/in/daniel-junior-victor-laté-632146331" target="_blank" data-i18n="btn_linkedin">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="assets/photo.png" alt="Daniel Photo" class="profile-pic">
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h3 data-i18n="about_title">À propos</h3>
+    <p data-i18n="about_text">
+      Étudiant en Master 1 Ingénierie Informatique, diplômé en Sciences Mathématiques et Informatique.
+      Je m’intéresse à l’innovation technologique et à son impact socio-économique.
+    </p>
+
+    <div class="about-grid">
+      <div class="card">
+        <h4 data-i18n="about_card1_title">Nationalité</h4>
+        <p data-i18n="about_card1_text">Nigérien - 21 ans</p>
+      </div>
+
+      <div class="card">
+        <h4 data-i18n="about_card2_title">Objectif</h4>
+        <p data-i18n="about_card2_text">Data, IA, systèmes distribués et développement d’applications.</p>
+      </div>
+
+      <div class="card">
+        <h4 data-i18n="about_card3_title">Centres d’intérêt</h4>
+        <p data-i18n="about_card3_text">Voyage, sport, découverte, musique.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h3 data-i18n="skills_title">Compétences</h3>
+
+    <div class="skills-grid">
+      <div class="card">
+        <h4 data-i18n="skills_1_title">Langages</h4>
+        <p>Python, Java, PHP, C, C#, SQL</p>
+      </div>
+
+      <div class="card">
+        <h4 data-i18n="skills_2_title">Frameworks</h4>
+        <p>Flask, Django, Bootstrap, ASP.NET, Java EE</p>
+      </div>
+
+      <div class="card">
+        <h4 data-i18n="skills_3_title">Outils</h4>
+        <p>UML, MySQL, ERP (Odoo), LaTeX (Overleaf)</p>
+      </div>
+
+      <div class="card">
+        <h4 data-i18n="skills_4_title">Autres</h4>
+        <p data-i18n="skills_4_text">Administration systèmes & réseaux, Canva, Deep Learning, OpenCV</p>
+      </div>
+    </div>
+
+    <div class="softskills">
+      <h4 data-i18n="softskills_title">Soft Skills</h4>
+      <div class="tags">
+        <span class="tag" data-i18n="soft_1">Communication</span>
+        <span class="tag" data-i18n="soft_2">Leadership</span>
+        <span class="tag" data-i18n="soft_3">Esprit critique</span>
+        <span class="tag" data-i18n="soft_4">Adaptation</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h3 data-i18n="projects_title">Projets</h3>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h4>Séjour Digital</h4>
+        <p data-i18n="proj1_desc">
+          Plateforme web de demande et gestion de titres de séjour pour étudiants internationaux.
+        </p>
+        <div class="project-tags">
+          <span>Web</span><span>Gestion</span><span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h4 data-i18n="proj2_title">Système IoT Anti-Gaspillage</h4>
+        <p data-i18n="proj2_desc">
+          OCR avec PaddleOCR + Regex, classification, intégration Gemini LLM, pipeline Flask.
+        </p>
+        <div class="project-tags">
+          <span>OCR</span><span>IA</span><span>Flask</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h4 data-i18n="proj3_title">Système Distribué Java</h4>
+        <p data-i18n="proj3_desc">
+          Architecture Master-Slave via sockets, multithreading, patterns producteurs-consommateurs.
+        </p>
+        <div class="project-tags">
+          <span>Java</span><span>Sockets</span><span>Distributed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <h3 data-i18n="exp_title">Expériences & Responsabilités</h3>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h4 data-i18n="exp1_title">Responsable Chargé du Programme</h4>
+        <span data-i18n="exp1_date">Avril 2026 - à nos jours</span>
+        <p data-i18n="exp1_desc">
+          Mise en place, suivi et évaluation d’un programme d’activités (Forum de l’Étudiant Nigérien - ANEM Centrale).
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h4 data-i18n="exp2_title">Président du Comité d’Organisation</h4>
+        <span data-i18n="exp2_date">Mai - Nov 2025</span>
+        <p data-i18n="exp2_desc">
+          Pilotage global du projet et coordination de l’équipe (Forum de l'Étudiant International - ASEET).
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h4 data-i18n="exp3_title">Secrétaire Général - ANEM Tétouan</h4>
+        <span data-i18n="exp3_date">2024 - à nos jours</span>
+        <p data-i18n="exp3_desc">
+          Gestion administrative, supervision et coordination des activités de l’association.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h4 data-i18n="exp4_title">Chargé à la Communication - ASEET</h4>
+        <span data-i18n="exp4_date">2024 - Février 2025</span>
+        <p data-i18n="exp4_desc">
+          Planification de stratégies de communication, conception d’outils de diffusion, renforcement de visibilité.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h4 data-i18n="exp5_title">Trésorier Général & Graphic Designer - ANEM Tétouan</h4>
+        <span data-i18n="exp5_date">2023 - 2024</span>
+        <p data-i18n="exp5_desc">
+          Gestion budgétaire, reporting financier, création de supports numériques promotionnels.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h4 data-i18n="exp6_title">Président - Coopérative Scolaire</h4>
+        <span data-i18n="exp6_date">2021 - 2022</span>
+        <p data-i18n="exp6_desc">
+          Coordination des équipes, gestion des ressources, planification et supervision des activités.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Awards -->
+  <section class="section" id="awards">
+    <h3 data-i18n="awards_title">Distinctions</h3>
+
+    <div class="awards-grid">
+      <div class="card award" data-i18n="award1">1ère Place - Concours Culture Générale (ASEET 2024)</div>
+      <div class="card award" data-i18n="award2">2ème Place - Concours d’éloquence (ASEET 2024)</div>
+      <div class="card award" data-i18n="award3">4ème Place - Jeux Mathématiques Nationaux (2022)</div>
+      <div class="card award" data-i18n="award4">Prix d’Excellence du Niger (Lauréat)</div>
+      <div class="card award" data-i18n="award5">Top 10% en Licence SMI</div>
+    </div>
+  </section>
+
+
+  <!-- Languages -->
+  <section class="section" id="languages">
+    <h3 data-i18n="languages_title">Langues</h3>
+
+    <div class="languages-grid">
+      <div class="card">Français - C2</div>
+      <div class="card">Anglais - C1 (EFSET)</div>
+      <div class="card">Haoussa - C2</div>
+      <div class="card">Arabe - A2</div>
+      <div class="card">Espagnol - A1</div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h3 data-i18n="contact_title">Contact</h3>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <p><strong data-i18n="contact_phone">Téléphone :</strong> +227 89 84 86 70 / +212 646 368023</p>
+        <p><strong>Email :</strong> victorlatedanieljunior@gmail.com</p>
+        <p><strong>Email :</strong> le.fantom32@gmail.com</p>
+        <p><strong data-i18n="contact_address">Adresse :</strong> 10 QUA Tamouda, Tétouan</p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Nom" data-i18n-placeholder="form_name">
+        <input type="email" placeholder="Email" data-i18n-placeholder="form_email">
+        <textarea rows="4" placeholder="Message" data-i18n-placeholder="form_message"></textarea>
+        <button type="submit" class="btn primary" data-i18n="form_send">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Daniel Junior Victor Laté</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
